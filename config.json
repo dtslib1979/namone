@@ -1,0 +1,62 @@
+{
+  "site": {
+    "name": "NAMONE",
+    "shortName": "NAMONE",
+    "domain": "namone.kr",
+    "url": "https://dtslib1979.github.io/namone/",
+    "description": "시흥 남원골 부동산 전문 - AI 쓰는 중개인",
+    "tagline": "신뢰로 거래하는 AI 쓰는 중개인",
+    "established": "2026.01.27",
+    "themeColor": "#D4AF37"
+  },
+  "owner": {
+    "name": "김남원",
+    "email": "namone@gmail.com",
+    "phone": "010-2831-7909",
+    "location": "경기도 시흥시 남원동"
+  },
+  "service": {
+    "title": "부동산 전문 중개",
+    "subtitle": "시흥 남원골에서 신뢰로 거래합니다",
+    "price": "상담 무료",
+    "ctaText": "문의하기",
+    "features": [
+      "시흥 지역 전문",
+      "AI 활용 매물 분석",
+      "신뢰 기반 거래"
+    ]
+  },
+  "staff": {
+    "accessCode": "7909",
+    "storageKey": "namone_staff_auth"
+  },
+  "pwa": {
+    "enabled": true,
+    "cacheName": "namone-v1"
+  },
+  "card": {
+    "name": "김남원",
+    "title": "부동산 전문 중개인",
+    "organization": "김남원 공인중개사",
+    "tagline": "시흥 남원골에서 신뢰로 거래하는 AI 쓰는 중개인",
+    "quote": "EST. 2026.01.27",
+    "email": "namone@gmail.com",
+    "phone": "010-2831-7909",
+    "website": "https://namone.kr",
+    "cardUrl": "https://namone.kr/card/",
+    "ogImage": "https://dtslib1979.github.io/namone/assets/icons/profile.jpg",
+    "contactButtonLabel": "CONTACT",
+    "theme": "gold"
+  },
+  "guild": {
+    "role": "master",
+    "hq": "namoneygoal",
+    "industry": "realestate",
+    "maxSlots": 12
+  },
+  "meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-02-06",
+    "template": "NAMONE"
+  }
+}

@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#0a0a14" />
+  <title>NAMONE | 김남원 공인중개사</title>
+  <meta name="description" content="시흥 남원골에서 신뢰로 거래하는 AI 쓰는 중개인 | EST. 2026.01.27" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NAMONE" />
+  <meta property="og:title" content="김남원 공인중개사" />
+  <meta property="og:description" content="시흥 남원골에서 신뢰로 거래하는 AI 쓰는 중개인" />
+  <meta property="og:image" content="https://dtslib1979.github.io/namone/assets/icons/profile.jpg" />
+  <meta property="og:url" content="https://dtslib1979.github.io/namone/" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="김남원 공인중개사" />
+  <meta name="twitter:description" content="시흥 남원골에서 신뢰로 거래하는 AI 쓰는 중개인" />
+  <meta name="twitter:image" content="https://dtslib1979.github.io/namone/assets/icons/profile.jpg" />
+
+  <link rel="icon" href="./assets/icons/logo.jpg" />
+  <link rel="apple-touch-icon" href="./assets/icons/profile.jpg" />
+  <link rel="manifest" href="./assets/manifest.json" />
+
+  <style>
+    :root {
+      --bg: #0a0a14;
+      --bg-elevated: #12121f;
+      --bg-card: #1a1a2e;
+      --bg-glass: rgba(26,26,46,.9);
+      --gold: #D4AF37;
+      --gold-light: #E8C547;
+      --gold-pale: #F4E4A6;
+      --gold-dim: rgba(212,175,55,.08);
+      --gold-glow: rgba(212,175,55,.15);
+      --text: #FAFAF8;
+      --text-secondary: rgba(250,250,248,.7);
+      --text-muted: rgba(250,250,248,.45);
+      --text-dim: rgba(250,250,248,.25);
+      --border: rgba(250,250,248,.08);
+      --border-gold: rgba(212,175,55,.25);
+
+      --space-xs: 4px;
+      --space-sm: 8px;
+      --space-md: 16px;
+      --space-lg: 24px;
+      --space-xl: 40px;
+      --space-2xl: 64px;
+      --space-3xl: 100px;
+
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+      --radius-full: 9999px;
+
+      --shadow-sm: 0 2px 8px rgba(0,0,0,.4);
+      --shadow-md: 0 8px 32px rgba(0,0,0,.5);
+      --shadow-lg: 0 20px 60px rgba(0,0,0,.6);
+      --shadow-gold: 0 8px 50px rgba(212,175,55,.2);
+
+      --safe-top: env(safe-area-inset-top, 0px);
+      --safe-bottom: env(safe-area-inset-bottom, 0px);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { height: 100%; scroll-behavior: smooth; }
+
+    body {
+      min-height: 100%;
+      font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 15px;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background:
+        radial-gradient(ellipse 80% 60% at 20% 10%, rgba(212,175,55,.05) 0%, transparent 50%),
+        radial-gradient(ellipse 60% 80% at 85% 90%, rgba(212,175,55,.03) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; cursor: pointer; border: none; background: none; }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto;
+      padding: calc(var(--safe-top) + var(--space-xl)) var(--space-lg) calc(var(--safe-bottom) + var(--space-2xl));
+    }
+
+    /* HEADER */
+    header {
+      text-align: center;
+      padding: var(--space-3xl) 0 var(--space-2xl);
+      position: relative;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1px;
+      height: 50px;
+      background: linear-gradient(180deg, transparent, var(--gold), transparent);
+      opacity: 0.4;
+    }
+
+    .profile-image {
+      width: 140px;
+      height: 140px;
+      margin: 0 auto var(--space-lg);
+      border-radius: 50%;
+      border: 3px solid var(--gold);
+      overflow: hidden;
+      box-shadow: var(--shadow-gold);
+    }
+
+    .profile-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .brand-name {
+      font-family: 'Cinzel', serif;
+      font-size: 32px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-pale) 50%, var(--gold) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: var(--space-sm);
+    }
+
+    .brand-title {
+      font-size: 14px;
+      color: var(--gold);
+      letter-spacing: 0.1em;
+      margin-bottom: var(--space-md);
+    }
+
+    .brand-tagline {
+      font-size: 13px;
+      color: var(--text-secondary);
+      max-width: 280px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* STATS */
+    .stats-bar {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-xl);
+      padding: var(--space-lg) 0;
+      margin: var(--space-lg) 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-value {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--gold);
+    }
+
+    .stat-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    /* SECTIONS */
+    .section {
+      margin-bottom: var(--space-xl);
+    }
+
+    .section-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: var(--space-md);
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+
+    /* CARDS */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+      margin-bottom: var(--space-md);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: var(--border-gold);
+      box-shadow: var(--shadow-md);
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: var(--space-xs);
+    }
+
+    .card-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    /* CONTACT BUTTONS */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-md);
+    }
+
+    .contact-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-sm);
+      padding: var(--space-md) var(--space-lg);
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-md);
+      color: var(--gold);
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .contact-btn:hover {
+      background: var(--gold);
+      color: var(--bg);
+    }
+
+    .contact-btn.primary {
+      background: var(--gold);
+      color: var(--bg);
+      grid-column: span 2;
+    }
+
+    .contact-btn.primary:hover {
+      background: var(--gold-light);
+      box-shadow: var(--shadow-gold);
+    }
+
+    /* GUILD BADGE */
+    .guild-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      padding: var(--space-sm) var(--space-md);
+      background: var(--gold-dim);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-full);
+      font-size: 12px;
+      color: var(--gold);
+      margin-bottom: var(--space-lg);
+    }
+
+    /* NAVIGATION */
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: var(--space-md) var(--space-lg);
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      transition: all 0.2s;
+    }
+
+    .nav-link:hover {
+      border-color: var(--border-gold);
+      transform: translateX(4px);
+    }
+
+    .nav-link-text {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+
+    .nav-link-arrow {
+      color: var(--text-muted);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: var(--space-xl) 0;
+      border-top: 1px solid var(--border);
+      margin-top: var(--space-xl);
+    }
+
+    .footer-text {
+      font-size: 11px;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+    }
+
+    .footer-link {
+      color: var(--gold);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="guild-badge">
+        <span>🏠</span>
+        <span>부동산 길드 길드장</span>
+      </div>
+
+      <div class="profile-image">
+        <img src="./assets/icons/profile.jpg" alt="김남원" onerror="this.style.display='none'">
+      </div>
+
+      <h1 class="brand-name">NAMONE</h1>
+      <p class="brand-title">김남원 공인중개사</p>
+      <p class="brand-tagline">시흥 남원골에서 신뢰로 거래하는<br>AI 쓰는 중개인</p>
+    </header>
+
+    <!-- Stats -->
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-value">시흥</div>
+        <div class="stat-label">지역</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">2026</div>
+        <div class="stat-label">Since</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">AI</div>
+        <div class="stat-label">활용</div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <section class="section">
+      <h2 class="section-title"><span>📞</span> 연락처</h2>
+      <div class="contact-grid">
+        <a href="tel:010-2831-7909" class="contact-btn">
+          <span>📱</span> 전화
+        </a>
+        <a href="mailto:namone@gmail.com" class="contact-btn">
+          <span>✉️</span> 이메일
+        </a>
+        <a href="./card/" class="contact-btn primary">
+          <span>📇</span> 명함 저장
+        </a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section">
+      <h2 class="section-title"><span>💼</span> 소개</h2>
+      <div class="card">
+        <h3 class="card-title">부동산 전문 중개</h3>
+        <p class="card-desc">경기도 시흥시 남원동에서 신뢰를 바탕으로 부동산 거래를 도와드립니다. AI를 활용한 매물 분석과 시세 정보를 제공합니다.</p>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="section">
+      <h2 class="section-title"><span>🔗</span> 바로가기</h2>
+      <nav class="nav-links">
+        <a href="./card/" class="nav-link">
+          <span class="nav-link-text"><span>📇</span> 디지털 명함</span>
+          <span class="nav-link-arrow">→</span>
+        </a>
+        <a href="./articles/" class="nav-link">
+          <span class="nav-link-text"><span>📝</span> 부동산 소식</span>
+          <span class="nav-link-arrow">→</span>
+        </a>
+        <a href="https://dtslib1979.github.io/namoneygoal/" class="nav-link">
+          <span class="nav-link-text"><span>🏠</span> 남원골 길드</span>
+          <span class="nav-link-arrow">→</span>
+        </a>
+        <a href="./staff/" class="nav-link">
+          <span class="nav-link-text"><span>⚙️</span> 스태프</span>
+          <span class="nav-link-arrow">→</span>
+        </a>
+      </nav>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p class="footer-text">
+        EST. 2026.01.27<br>
+        Powered by <a href="https://dtslib1979.github.io/namoneygoal/" class="footer-link">남원골 길드</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>

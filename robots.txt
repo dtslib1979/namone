@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dtslib1979.github.io/namone/sitemap.xml

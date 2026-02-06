@@ -1,0 +1,21 @@
+{
+  "name": "김남원 공인중개사",
+  "short_name": "NAMONE",
+  "description": "시흥 남원골에서 신뢰로 거래하는 AI 쓰는 중개인",
+  "start_url": "/namone/",
+  "display": "standalone",
+  "background_color": "#0a0a14",
+  "theme_color": "#D4AF37",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

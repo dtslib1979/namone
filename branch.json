@@ -1,0 +1,38 @@
+{
+  "id": "namone",
+  "name": "NAMONE",
+  "tagline": "시흥 남원골 부동산 전문",
+  "hq": "dtslib1979/dtslib-branch",
+  "version": "1.0",
+  "status": "active",
+  "visibility": "public",
+  "area": "realestate",
+  "tier": "standard",
+  "theme": {
+    "primary": "#D4AF37",
+    "accent": "#E8C547",
+    "bg": "#0a0a14",
+    "text": "#f5f5f5"
+  },
+  "guild": {
+    "role": "master",
+    "industry": "realestate",
+    "parentGuild": "namoneygoal",
+    "description": "부동산 길드 길드장"
+  },
+  "subscriptions": [
+    {
+      "feedId": "hq-notices",
+      "publisher": "hq",
+      "autoSync": true,
+      "target": null
+    },
+    {
+      "feedId": "hq-templates",
+      "publisher": "hq",
+      "autoSync": true,
+      "target": "assets/templates"
+    }
+  ],
+  "features": ["realestate", "ai-walkie", "guild-master"]
+}
