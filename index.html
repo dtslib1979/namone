@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JUSTINO — Shopping Mall</title>
-<meta name="description" content="JUSTINO Shopping Mall. 쇼핑은 경험이다. 4-Channel Shopping Broadcasting.">
+<title>Jus.tino — The Depth of Standard</title>
+<meta name="description" content="Jus.tino (후스티노). 정석의 깊이, 숙성의 예술. 4-Channel Shopping Broadcasting.">
 <meta name="theme-color" content="#0a0a0a">
 <meta property="og:type" content="website">
-<meta property="og:title" content="JUSTINO — Shopping Mall">
-<meta property="og:description" content="쇼핑은 경험이다 — Curation · Catalog · Lifestyle · Academy">
+<meta property="og:title" content="Jus.tino — The Depth of Standard">
+<meta property="og:description" content="정석의 깊이, 숙성의 예술 — Curation · Catalog · Lifestyle · Academy">
 <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/brand/icon-192.png" sizes="192x192" type="image/png">
 <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
@@ -79,10 +79,16 @@ img,svg{display:block;max-width:100%}
 .hero__bg::after{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");background-repeat:repeat;background-size:256px;opacity:0.4;pointer-events:none}
 .hero__content{position:relative;z-index:1;text-align:center;padding:0 var(--gutter)}
 
-/* ═══ JUSTINO LOGO — Typographic ═══ */
+/* ═══ JUS.TINO LOGO — Morphing Typographic ═══ */
 .hero-logo{position:relative;margin-bottom:32px}
-.hero-logo__text{font-size:clamp(3rem,10vw,6rem);font-weight:200;letter-spacing:0.3em;text-transform:uppercase;color:var(--text);animation:logoEnter 1.4s var(--ease-out) 0.3s both}
+.hero-logo__text{font-size:clamp(3rem,10vw,6rem);font-weight:200;letter-spacing:0.3em;text-transform:uppercase;color:var(--text);animation:logoEnter 1.4s var(--ease-out) 0.3s both;position:relative;display:inline-block}
 .hero-logo__accent{color:var(--accent);font-weight:400}
+.hero-logo__dot{color:var(--accent);font-weight:600}
+.hero-logo__sub{display:block;font-size:0.7rem;font-weight:300;letter-spacing:0.25em;color:var(--text-3);margin-top:12px;opacity:0;transition:opacity 0.6s ease;text-transform:none}
+.hero-logo__sub.is-visible{opacity:1}
+/* Morph cursor blink */
+.hero-logo__cursor{display:inline-block;width:2px;height:1em;background:var(--accent);margin-left:4px;animation:cursorBlink 1s step-end infinite;vertical-align:baseline}
+@keyframes cursorBlink{0%,100%{opacity:1}50%{opacity:0}}
 
 @keyframes logoEnter{from{opacity:0;transform:translateY(20px) scale(0.96)}to{opacity:1;transform:translateY(0) scale(1)}}
 @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
@@ -222,12 +228,12 @@ img,svg{display:block;max-width:100%}
 
 <!-- LOADER -->
 <div class="loader" id="loader">
-  <div class="loader__brand">JUSTINO</div>
+  <div class="loader__brand">Jus.tino</div>
 </div>
 
 <!-- NAV -->
 <nav class="nav" id="nav">
-  <a href="/" class="nav__brand">JUSTINO</a>
+  <a href="/" class="nav__brand">Jus.tino</a>
   <div class="nav__channels">
     <a href="channels/curation.html" class="nav__ch" data-ch="ch1">CH1 Curation</a>
     <a href="channels/catalog.html" class="nav__ch" data-ch="ch2">CH2 Catalog</a>
@@ -235,6 +241,7 @@ img,svg{display:block;max-width:100%}
     <a href="channels/academy.html" class="nav__ch" data-ch="ch4">CH4 Academy</a>
   </div>
   <div class="nav__actions">
+    <a href="about.html" class="nav__link">About</a>
     <a href="showroom/" class="nav__link">Showroom</a>
     <a href="workstation/" class="nav__link nav__ws">WS</a>
   </div>
@@ -245,9 +252,10 @@ img,svg{display:block;max-width:100%}
   <div class="hero__bg"></div>
   <div class="hero__content">
     <div class="hero-logo">
-      <h1 class="hero-logo__text">JUST<span class="hero-logo__accent">IN</span>O</h1>
+      <h1 class="hero-logo__text" id="heroLogo">Jus<span class="hero-logo__dot">.</span>tino</h1>
+      <span class="hero-logo__sub" id="heroSub">후스티노</span>
     </div>
-    <p class="hero__tagline">shop the experience</p>
+    <p class="hero__tagline">the depth of standard, the art of aging</p>
     <div class="hero__line"></div>
   </div>
 
@@ -260,18 +268,18 @@ img,svg{display:block;max-width:100%}
 <!-- MARQUEE -->
 <div class="marquee">
   <div class="marquee__inner">
-    <span class="marquee__item">Shopping Mall Franchise</span>
-    <span class="marquee__item">4-Channel Broadcasting</span>
+    <span class="marquee__item">The Depth of Standard</span>
+    <span class="marquee__item">The Art of Aging</span>
     <span class="marquee__item">Curation · Catalog · Lifestyle · Academy</span>
-    <span class="marquee__item">쇼핑은 경험이다</span>
-    <span class="marquee__item">DTSLIB Branch</span>
-    <span class="marquee__item">justino.kr</span>
-    <span class="marquee__item">Shopping Mall Franchise</span>
-    <span class="marquee__item">4-Channel Broadcasting</span>
+    <span class="marquee__item">정석의 깊이, 숙성의 예술</span>
+    <span class="marquee__item">후스티노</span>
+    <span class="marquee__item">Jus.tino</span>
+    <span class="marquee__item">The Depth of Standard</span>
+    <span class="marquee__item">The Art of Aging</span>
     <span class="marquee__item">Curation · Catalog · Lifestyle · Academy</span>
-    <span class="marquee__item">쇼핑은 경험이다</span>
-    <span class="marquee__item">DTSLIB Branch</span>
-    <span class="marquee__item">justino.kr</span>
+    <span class="marquee__item">정석의 깊이, 숙성의 예술</span>
+    <span class="marquee__item">후스티노</span>
+    <span class="marquee__item">Jus.tino</span>
   </div>
 </div>
 
@@ -323,27 +331,28 @@ img,svg{display:block;max-width:100%}
 <!-- STATEMENT -->
 <section class="statement reveal">
   <div class="statement__text">
-    <span class="line">쇼핑은</span>
-    <span class="line"><em>경험</em>이다.</span>
-    <span class="line">당신이 고르는 모든 것에는</span>
-    <span class="line">이유가 있다.</span>
+    <span class="line">정석은</span>
+    <span class="line"><em>깊이</em>가 된다.</span>
+    <span class="line">시간이 흐를수록</span>
+    <span class="line">가치가 깊어지는 것들.</span>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
   <div class="container">
-    <div class="footer__brand">JUSTINO</div>
-    <p class="footer__tagline">Shopping Mall — Shop the Experience</p>
+    <div class="footer__brand">Jus.tino</div>
+    <p class="footer__tagline">후스티노 — The Depth of Standard, The Art of Aging</p>
     <div class="footer__links">
       <a href="channels/curation.html" class="footer__link">Curation</a>
       <a href="channels/catalog.html" class="footer__link">Catalog</a>
       <a href="channels/lifestyle.html" class="footer__link">Lifestyle</a>
       <a href="channels/academy.html" class="footer__link">Academy</a>
+      <a href="about.html" class="footer__link">Brand Story</a>
       <a href="showroom/" class="footer__link">Showroom</a>
       <a href="workstation/" class="footer__link">Workstation</a>
     </div>
-    <p class="footer__copy">&copy; 2026 JUSTINO. A DTSLIB Branch. All rights reserved.</p>
+    <p class="footer__copy">&copy; 2026 Jus.tino (後's Tino). A DTSLIB Branch. All rights reserved.</p>
   </div>
 </footer>
 
@@ -377,6 +386,31 @@ img,svg{display:block;max-width:100%}
   window.addEventListener('load',function(){
     setTimeout(function(){document.getElementById('loader').classList.add('is-hidden')},800);
   });
+
+  /* ═══ BRAND MORPH — 철자가 바뀌며 의미가 드러나는 로고 ═══ */
+  (function morphLogo(){
+    var el=document.getElementById('heroLogo');
+    var sub=document.getElementById('heroSub');
+    if(!el)return;
+
+    var phases=[
+      {text:'JUSTIN',sub:'Justin — 바른, 정의로운',delay:2000},
+      {text:'JUSTIN<span class="hero-logo__dot">.</span>O',sub:'Justino — 정석(Standard)',delay:2000},
+      {text:'JUS<span class="hero-logo__dot">.</span>TINO',sub:'Tino — 오크통, 숙성의 그릇',delay:2500},
+      {text:'後<span class="hero-logo__accent">\'s</span> TINO',sub:'後 — 두터운 질감, 시간 뒤의 가치',delay:2500},
+      {text:'Jus<span class="hero-logo__dot">.</span>tino',sub:'후스티노 — 정석의 깊이, 숙성의 예술',delay:3000},
+    ];
+
+    var idx=0;
+    function next(){
+      var p=phases[idx];
+      el.innerHTML=p.text;
+      if(sub){sub.textContent=p.sub;sub.classList.add('is-visible');}
+      idx=(idx+1)%phases.length;
+      setTimeout(function(){if(sub)sub.classList.remove('is-visible');setTimeout(next,400)},p.delay);
+    }
+    setTimeout(next,2000);
+  })();
 
   /* Nav scroll effect */
   var nav=document.getElementById('nav');

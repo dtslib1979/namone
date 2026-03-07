@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jus.tino — Brand Story</title>
+<meta name="theme-color" content="#0a0a0a">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{
+  --bg:#0a0a0a;--surface:#111;--elevated:#1a1a1a;
+  --text:#f0f0f0;--text-2:rgba(240,240,240,0.7);--text-3:rgba(240,240,240,0.4);
+  --accent:#D4AF37;--accent-hover:#E8C547;--white:#fff;
+  --border:rgba(255,255,255,0.06);--border-bold:rgba(255,255,255,0.12);
+  --nav-h:56px;
+  --font:'Pretendard Variable',Pretendard,-apple-system,system-ui,'Noto Sans KR',sans-serif;
+  --gutter:clamp(16px,4vw,48px);
+  --max-w:800px;
+  --ease-out:cubic-bezier(0.16,1,0.3,1);
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.8;overflow-x:hidden}
+a{color:var(--accent);text-decoration:none}
+a:hover{color:var(--accent-hover)}
+
+.nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:100;display:flex;align-items:center;padding:0 var(--gutter);background:rgba(10,10,10,0.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
+.nav__brand{font-size:0.85rem;font-weight:200;letter-spacing:0.3em;text-transform:uppercase;color:var(--text)}
+.nav__back{font-size:0.65rem;font-weight:400;letter-spacing:0.1em;color:var(--text-3);margin-left:auto}
+
+.page{max-width:var(--max-w);margin:0 auto;padding:calc(var(--nav-h) + 64px) var(--gutter) 96px}
+
+.page__label{font-size:0.6rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+.page__title{font-size:clamp(2rem,5vw,3.5rem);font-weight:200;letter-spacing:-0.02em;line-height:1.2;margin-bottom:16px}
+.page__subtitle{font-size:1rem;font-weight:300;color:var(--text-2);margin-bottom:64px;letter-spacing:0.05em}
+
+.section{margin-bottom:64px}
+.section__num{font-size:0.6rem;font-weight:600;color:var(--accent);letter-spacing:0.15em;margin-bottom:8px}
+.section__title{font-size:1.4rem;font-weight:600;letter-spacing:-0.01em;margin-bottom:16px}
+.section__text{font-size:0.95rem;font-weight:300;color:var(--text-2);line-height:1.9}
+.section__text em{font-style:normal;color:var(--accent);font-weight:400}
+
+.etymology{display:grid;grid-template-columns:1fr;gap:24px;margin:32px 0}
+.etymology__item{padding:24px;background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent)}
+.etymology__word{font-size:1.2rem;font-weight:600;margin-bottom:4px}
+.etymology__origin{font-size:0.65rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-3);margin-bottom:8px}
+.etymology__desc{font-size:0.85rem;font-weight:300;color:var(--text-2)}
+
+.matrix{width:100%;border-collapse:collapse;margin:32px 0;font-size:0.8rem}
+.matrix th{padding:12px 16px;text-align:left;font-weight:500;font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);border-bottom:2px solid var(--accent);background:var(--surface)}
+.matrix td{padding:12px 16px;border-bottom:1px solid var(--border);color:var(--text-2);font-weight:300}
+.matrix tr:hover td{background:var(--elevated)}
+
+.manifesto{padding:48px 32px;background:var(--surface);border:1px solid var(--border);margin:32px 0;font-size:1.1rem;font-weight:200;line-height:1.9;color:var(--text-2);font-style:italic;position:relative}
+.manifesto::before{content:'"';position:absolute;top:16px;left:24px;font-size:4rem;color:var(--accent);font-style:normal;line-height:1;opacity:0.4}
+.manifesto em{font-style:normal;color:var(--accent);font-weight:400}
+
+.divider{width:48px;height:1px;background:var(--accent);margin:48px 0;opacity:0.4}
+
+.footer{text-align:center;padding:48px 0;border-top:1px solid var(--border);margin-top:64px}
+.footer__text{font-size:0.6rem;color:var(--text-3);letter-spacing:0.1em}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/" class="nav__brand">Jus.tino</a>
+  <a href="/" class="nav__back">&larr; Back</a>
+</nav>
+
+<main class="page">
+
+  <div class="page__label">Brand White Paper</div>
+  <h1 class="page__title">Jus.tino<br><span style="color:var(--text-3);font-size:0.5em;letter-spacing:0.2em">후스티노</span></h1>
+  <p class="page__subtitle">The Depth of Standard, The Art of Aging<br>정석의 깊이, 숙성의 예술</p>
+
+  <div class="divider"></div>
+
+  <!-- 1. OVERVIEW -->
+  <section class="section">
+    <div class="section__num">01 — Executive Summary</div>
+    <h2 class="section__title">브랜드 개요</h2>
+    <p class="section__text">
+      10년의 재무 시스템 경력과 <em>'정석(Standard)'</em>을 중시하는 철학을 바탕으로,
+      시간이 흐를수록 가치가 깊어지는 하이엔드 남성 패션을 제안합니다.
+    </p>
+  </section>
+
+  <!-- 2. NAMING -->
+  <section class="section">
+    <div class="section__num">02 — Naming Archive</div>
+    <h2 class="section__title">네이밍 아카이브</h2>
+    <p class="section__text">어원적 결합(Etymology)으로 설계된 브랜드명.</p>
+
+    <div class="etymology">
+      <div class="etymology__item">
+        <div class="etymology__word">Justin</div>
+        <div class="etymology__origin">Latin: Justinus</div>
+        <div class="etymology__desc">'바른', '정의로운', '정석(Standard)'. 사용자의 영어 이름이자 브랜드의 근간.</div>
+      </div>
+      <div class="etymology__item">
+        <div class="etymology__word">Hoo (後/厚)</div>
+        <div class="etymology__origin">漢字: 박후정의 핵심 인자</div>
+        <div class="etymology__desc">'두터운(厚) 질감'과 '시간이 흐른 뒤(後)의 가치'를 중의적으로 표현.</div>
+      </div>
+      <div class="etymology__item">
+        <div class="etymology__word">Tino</div>
+        <div class="etymology__origin">Italian: Vat / Oak barrel</div>
+        <div class="etymology__desc">와인을 숙성시키는 '오크통'. 옷에 사용자의 역사를 담는 그릇이라는 철학.</div>
+      </div>
+    </div>
+
+    <p class="section__text">
+      <em>Jus.tino</em> — 마침표(.)로 시스템의 '종결'과 '정석'을 시각화.<br>
+      <em>後's Tino</em> — 한자 '뒤 후(後)'를 병기하여 동양적 무게감과 에이징의 서사를 강조.
+    </p>
+  </section>
+
+  <!-- 3. MATRIX -->
+  <section class="section">
+    <div class="section__num">03 — System Matrix</div>
+    <h2 class="section__title">시스템 매트릭스</h2>
+    <p class="section__text">'모듈식 사고'를 반영한 3×4 제품군 설계.</p>
+
+    <table class="matrix">
+      <thead>
+        <tr>
+          <th>Tino</th>
+          <th>厚 (두터울)</th>
+          <th>後 (뒤)</th>
+          <th>侯 (제후)</th>
+          <th>煦 (빛날)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Vat</strong> 숙성</td>
+          <td>묵직한 가죽 자켓</td>
+          <td>빈티지 복각 데님</td>
+          <td>중후한 트렌치코트</td>
+          <td>광택 있는 무스탕</td>
+        </tr>
+        <tr>
+          <td><strong>Essence</strong> 정수</td>
+          <td>캐시미어 니트</td>
+          <td>정통 옥스퍼드 셔츠</td>
+          <td>제냐 원단 수트</td>
+          <td>실크 액세서리</td>
+        </tr>
+        <tr>
+          <td><strong>Discernment</strong> 안목</td>
+          <td>견고한 브리프케이스</td>
+          <td>빈티지 아카이브 시계</td>
+          <td>하이엔드 수제화</td>
+          <td>커프스링크</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 4. MANIFESTO -->
+  <section class="section">
+    <div class="section__num">04 — Brand Manifesto</div>
+    <h2 class="section__title">브랜드 선언</h2>
+
+    <div class="manifesto">
+      우리는 단순한 옷을 팔지 않습니다.<br>
+      우리는 <em>'후(Hoo)'</em>라는 기준으로 엄선된 <em>'정수(Essence)'</em>를 판매합니다.<br><br>
+      제냐의 정교한 원단부터 에이징된 가죽의 주름까지,<br>
+      Jus.tino의 모든 제품은 당신의 인생이라는 시스템 안에서<br>
+      가장 완벽한 <em>'출력(Output)'</em>이 될 것입니다.
+    </div>
+  </section>
+
+  <!-- 5. INFRASTRUCTURE -->
+  <section class="section">
+    <div class="section__num">05 — Infrastructure</div>
+    <h2 class="section__title">인프라 전략</h2>
+    <p class="section__text">
+      DTSLIB 프랜차이즈 브랜치로서 gohsy-fashion 보일러플레이트 기반.<br>
+      4채널 루프백 아키텍처 — 쿠팡 · 네이버 · YouTube · 쇼룸 동시 배포.<br><br>
+      <em>Curation</em> — 엄선된 상품<br>
+      <em>Catalog</em> — 전 상품 탐색<br>
+      <em>Lifestyle</em> — 삶에 녹아드는 스타일링<br>
+      <em>Academy</em> — 커머스 운영 교육
+    </p>
+  </section>
+
+  <div class="divider"></div>
+
+  <footer class="footer">
+    <p class="footer__text">
+      Jus.tino (後's Tino) — A DTSLIB Branch<br>
+      &copy; 2026. All rights reserved.
+    </p>
+  </footer>
+
+</main>
+</body>
+</html>
