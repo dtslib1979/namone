@@ -1,12 +1,12 @@
 {
-  "id": "namone",
-  "name": "NAMONE",
-  "tagline": "시흥 남원골 부동산 전문",
+  "id": "justino",
+  "name": "JUSTINO",
+  "tagline": "Shopping Mall Branch",
   "hq": "dtslib1979/dtslib-branch",
   "version": "1.0",
   "status": "active",
   "visibility": "public",
-  "area": "realestate",
+  "area": "commerce",
   "tier": "standard",
   "theme": {
     "primary": "#D4AF37",
@@ -14,11 +14,11 @@
     "bg": "#0a0a14",
     "text": "#f5f5f5"
   },
-  "guild": {
-    "role": "master",
-    "industry": "realestate",
-    "parentGuild": "namoneygoal",
-    "description": "부동산 길드 길드장"
+  "commerce": {
+    "type": "shopping-mall",
+    "boilerplate": "gohsy-fashion",
+    "channels": ["online-store", "youtube", "showroom"],
+    "description": "Shopping mall franchise branch"
   },
   "subscriptions": [
     {
@@ -34,5 +34,11 @@
       "target": "assets/templates"
     }
   ],
-  "features": ["realestate", "ai-walkie", "guild-master"]
+  "features": ["commerce", "shopping-mall"],
+  "history": {
+    "previous_id": "namone",
+    "previous_role": "부동산 길드장 (Deprecated → namoneygoal 흡수)",
+    "transition_date": "2026-03-07",
+    "transition_type": "rename + repurpose"
+  }
 }
