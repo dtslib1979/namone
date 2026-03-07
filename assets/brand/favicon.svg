@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#0a0a0a"/>
+  <!-- J letterform — thin elegant serif -->
+  <text x="100" y="380" font-family="Georgia,serif" font-size="360" font-weight="200" fill="#f0f0f0" letter-spacing="-10">J</text>
+  <!-- The iconic dot — gold accent, the period in Jus.tino -->
+  <circle cx="380" cy="340" r="42" fill="#D4AF37"/>
+  <!-- Small 't' hint -->
+  <text x="320" y="380" font-family="Georgia,serif" font-size="240" font-weight="100" fill="rgba(240,240,240,0.3)">t</text>
+</svg>

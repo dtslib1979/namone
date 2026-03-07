@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <!-- Jus -->
+  <text x="20" y="155" font-family="Georgia,'Times New Roman',serif" font-size="140" font-weight="300" fill="#f0f0f0" letter-spacing="4">Jus</text>
+  <!-- The dot — brand signature -->
+  <circle cx="310" cy="145" r="10" fill="#D4AF37"/>
+  <!-- tino -->
+  <text x="330" y="155" font-family="Georgia,'Times New Roman',serif" font-size="140" font-weight="300" fill="#f0f0f0" letter-spacing="4">tino</text>
+  <!-- Tagline -->
+  <text x="22" y="190" font-family="'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="300" fill="rgba(240,240,240,0.4)" letter-spacing="6" text-transform="uppercase">THE DEPTH OF STANDARD</text>
+</svg>
